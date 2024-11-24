@@ -10,8 +10,8 @@ This is a simple task management application built using NestJS, ReactJS, and My
 ### 🛠️ Tech Stack Used
 
 - NestJS (Backend)
+- ReactJS + JoyUI (Frontend)
 - MySQL (Database)
-- ReactJS + MaterialUI (Frontend)
 - Docker (Containerization)
 - Passport / JWT (Authentication)
 - TypeScript
