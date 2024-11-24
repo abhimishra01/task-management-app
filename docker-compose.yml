@@ -8,6 +8,9 @@ services:
       - database
     environment:
       DATABASE_HOST: database
+      JWT_SECRET: 7f6a6ac6c0c07f934b4b10612
+      # Since this is an assignment, For quick testing purposes, I am using a static secret.
+      # Plan to update this to a dynamic secret injection via CD workflow / github actions
       DATABASE_PORT: 3306
       DATABASE_USER: root
       DATABASE_PASSWORD:

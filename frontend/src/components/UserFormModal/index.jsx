@@ -76,6 +76,7 @@ const UserFormModal = () => {
                 type="password"
                 name="password"
                 value={formData.password}
+                placeholder="Password"
                 onChange={handleChange}
                 required
                 sx={{ flexGrow: 1 }}
