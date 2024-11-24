@@ -23,9 +23,9 @@ This is a simple task management application built using NestJS, ReactJS, and My
   _Note :- Docker Desktop verion 4.16.2_
 - Start the Application (FE + BE + DB)
 
-  ```
-  ./scripts/start-app.sh
-  ```
+```
+./scripts/start-app.sh
+```
 
 - Rebuild and start the application
 
@@ -38,6 +38,8 @@ This is a simple task management application built using NestJS, ReactJS, and My
 ```
 ./scripts/stop-app.sh
 ```
+
+_Note :- Since time was of the essence, Unit tests/E2E tests are not included in the current version, but will be added soon _
 
 - Application ports
 
