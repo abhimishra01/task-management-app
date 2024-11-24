@@ -1,13 +1,13 @@
-### Task Management Application
+## 📝 Task Management Application
 
 This is a simple task management application built using NestJS, ReactJS, and MySQL.
 
-#### Features
+#### 🚀 Features
 
 - Task creation, editing, and deletion
 - User CRUDS and role based authorization
 
-### Tech Stack Used
+### 🛠️ Tech Stack Used
 
 - NestJS (Backend)
 - MySQL (Database)
@@ -17,9 +17,9 @@ This is a simple task management application built using NestJS, ReactJS, and My
 - TypeScript
 - API Docs (Swagger)
 
-### Application Scripts
+### ⚡️ Application Scripts
 
-- Ensure Docker Engine is installed and running.
+- Ensure Docker 🐳` engine and docker-compose is installed and running.
   _Note :- Docker Desktop verion 4.16.2_
 - Start the Application (FE + BE + DB)
 
