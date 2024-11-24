@@ -86,7 +86,7 @@ const Login = () => {
           <Button
             type="submit"
             variant="solid"
-            color="primary"
+            sx={{ backgroundColor: "#21388A" }}
             disabled={loading}
           >
             {loading ? (
