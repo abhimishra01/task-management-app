@@ -46,8 +46,6 @@ Frontend will be available on http://localhost:3000
 Backend will be available on http://localhost:3001
 Swagger API Docs will be available on http://localhost:3001/api
 Database will be available on http://localhost:3306
-
-
 ```
 
 ### Application Demo
