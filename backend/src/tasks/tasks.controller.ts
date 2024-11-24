@@ -3,7 +3,6 @@ import {
   Get,
   Post,
   Body,
-  Patch,
   Param,
   Delete,
   UseGuards,
@@ -15,12 +14,14 @@ import {
 } from 'src/authguard/auth.guard';
 import { Roles } from 'src/authguard/roles.decorators';
 import { Role } from 'src/users/interfaces';
+import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 
 import { TaskOwnerShipGuard } from './guards/index.guard';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto, UpdateTaskDto } from './dto';
 import { CurrentUser } from './utils';
 
+@ApiTags('tasks')
 @UseGuards(new JwtAuthenticationGuard())
 @Controller('tasks')
 export class TasksController {
@@ -28,6 +29,11 @@ export class TasksController {
 
   @Roles([Role.ADMIN])
   @UseGuards(Authorization)
+  @ApiOperation({ summary: 'Create a new task' })
+  @ApiResponse({
+    status: 200,
+    description: 'Return the success response',
+  })
   @Post()
   create(@Body() createTaskDto: CreateTaskDto) {
     return this.tasksService.create(createTaskDto);
@@ -35,6 +41,11 @@ export class TasksController {
 
   @Roles([Role.ADMIN, Role.USER])
   @UseGuards(Authorization)
+  @ApiOperation({ summary: 'Get all tasks for current user' })
+  @ApiResponse({
+    status: 200,
+    description: 'Return all tasks for current user',
+  })
   @Get()
   findAll(@CurrentUser() currentUser: any) {
     return this.tasksService.findAll(currentUser);
@@ -50,6 +61,7 @@ export class TasksController {
   @Roles([Role.ADMIN, Role.USER])
   @UseGuards(Authorization)
   @UseGuards(TaskOwnerShipGuard)
+  @ApiOperation({ summary: 'Update new task by id' })
   @Post(':id')
   update(
     @Param('id') id: string,
@@ -61,6 +73,7 @@ export class TasksController {
 
   @Roles([Role.ADMIN, Role.USER])
   @UseGuards(Authorization)
+  @ApiOperation({ summary: 'Delete new task' })
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.tasksService.remove(id);

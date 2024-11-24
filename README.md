@@ -15,6 +15,7 @@ This is a simple task management application built using NestJS, ReactJS, and My
 - Docker (Containerization)
 - Passport / JWT (Authentication)
 - TypeScript
+- API Docs (Swagger)
 
 ### Application Scripts
 
@@ -43,6 +44,7 @@ This is a simple task management application built using NestJS, ReactJS, and My
 ```
 Frontend will be available on http://localhost:3000
 Backend will be available on http://localhost:3001
+Swagger API Docs will be available on http://localhost:3001/api
 Database will be available on http://localhost:3306
 
 ```
