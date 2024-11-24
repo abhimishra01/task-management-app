@@ -50,11 +50,8 @@ Database will be available on http://localhost:3306
 
 ```
 
-
-- Demo Video
-
+### Application Demo
 
 https://github.com/user-attachments/assets/97f91dea-b99a-415d-a80b-468169152f59
 
 ---
-
