@@ -20,7 +20,7 @@ This is a simple task management application built using NestJS, ReactJS, and My
 ### ⚡️ Application Scripts
 
 - Ensure Docker 🐳` engine and docker-compose is installed and running.
-  _Note :- Docker Desktop verion 4.16.2_
+  _Note :- Docker Desktop verion used 4.16.2_
 - Start the Application (FE + BE + DB)
 
 ```
@@ -39,14 +39,14 @@ This is a simple task management application built using NestJS, ReactJS, and My
 ./scripts/stop-app.sh
 ```
 
-_Note :- Since time was of the essence, Unit tests/E2E tests are not included in the current version, but will be added soon _
+_Note :- Since time was of the essence, Unit tests/E2E tests are not included in the current version, but will be added soon_
 
 - Application ports
 
 ```
-Frontend will be available on http://localhost:3000
-Backend will be available on http://localhost:3001
-Swagger API Docs will be available on http://localhost:3001/api
+Frontend will be available on http://localhost:3001
+Backend will be available on http://localhost:3000
+Swagger API Docs will be available on http://localhost:3000/api
 Database will be available on http://localhost:3306
 ```
 
@@ -55,3 +55,17 @@ Database will be available on http://localhost:3306
 https://github.com/user-attachments/assets/97f91dea-b99a-415d-a80b-468169152f59
 
 ---
+
+### 📚 Essentials
+
+- Pre seeded user authentication details
+
+```
+username: admin1
+password: password1
+role : admin
+
+username: user1
+password: password2
+role : user
+```
