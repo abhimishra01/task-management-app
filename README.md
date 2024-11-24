@@ -50,12 +50,6 @@ Swagger API Docs will be available on http://localhost:3000/api
 Database will be available on http://localhost:3306
 ```
 
-### Application Demo
-
-https://github.com/user-attachments/assets/97f91dea-b99a-415d-a80b-468169152f59
-
----
-
 ### 📚 Essentials
 
 - Pre seeded user authentication details
@@ -69,3 +63,11 @@ username: user1
 password: password2
 role : user
 ```
+
+---
+
+### Application Demo
+
+https://github.com/user-attachments/assets/97f91dea-b99a-415d-a80b-468169152f59
+
+---
