@@ -47,4 +47,14 @@ Backend will be available on http://localhost:3001
 Swagger API Docs will be available on http://localhost:3001/api
 Database will be available on http://localhost:3306
 
+
 ```
+
+
+- Demo Video
+
+
+https://github.com/user-attachments/assets/97f91dea-b99a-415d-a80b-468169152f59
+
+---
+
