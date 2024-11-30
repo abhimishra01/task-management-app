@@ -61,7 +61,7 @@ export class TasksService {
     let dbResponse;
 
     if (currentUser.role === Role.ADMIN) {
-      dbResponse = await this.taskRepository.find({
+      dbResponse = await this.taskRepository.findAndCount({
         relations: ['user'],
       });
       const finalResponse = transformAllTasksWithUser(dbResponse);

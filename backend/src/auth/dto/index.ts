@@ -1,6 +1,4 @@
-import { IsString, IsOptional } from 'class-validator';
-
-import { PartialType } from '@nestjs/mapped-types';
+import { IsString } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateAuthDto {
